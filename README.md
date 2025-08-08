@@ -14,6 +14,6 @@ Players and AI take turns using moves until one side wins, with features like cr
 ## Installation
 Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/yourusername/turn_based_game.git
+git clone https://github.com/dethum/turn_based_game.git
 cd turn_based_game
 pip install -r requirements.txt
