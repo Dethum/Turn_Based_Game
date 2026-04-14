@@ -7,7 +7,7 @@
 
   {
     "name": "Blessing",
-    "type": "support",
+    "type": "healing",
     "power": 8,
     "critical_chance": 0,
     "miss_chance": 0
@@ -20,5 +20,24 @@
     "critical_chance": 0.1,
     "miss_chance": 0.1,
     "status_effect": { "name": "poison", "magnitude": 5, "duration": 3 }
+  },
+  
+  {
+    "name": "Shield Bash",
+    "type": "attack",
+    "power": 6,
+    "critical_chance": 0.3,
+    "miss_chance": 0.01,
+    "status_effect": { "name": "stun", "magnitude": 0, "duration": 1 }
+  },
+
+  {
+    "name": "grapple",
+    "type": "bind",
+    "power": 0,
+    "critical_chance": 0,
+    "miss_chance": 0.3,
+    "status_effect": { "name": "grapple", "magnitude": 0, "duration": 1 }
   }
+
 ]

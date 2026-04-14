@@ -27,8 +27,13 @@ class Move:
             damage *= 2
             print("Critical hit!")
 
+        if self.type == "healing":
+            user.hp += self.power
+            user.hp = min(user.hp, user.max_hp) # cap at max HP
+            print(f"{user.name} heals for {self.power} HP!")
+
         # Apply base damage
-        if self.power > 0:
+        elif self.power > 0:
             target.hp -= self.power
             print(f"{user.name} hits {target.name} for {self.power} damage!")
 

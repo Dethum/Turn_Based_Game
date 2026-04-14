@@ -1,7 +1,7 @@
 import sys
 import time
 import random
-from colorama import Fore, Style, init
+from colorama import init, Fore, Style
 
 # Initialize colorama (works on Windows & macOS/Linux)
 init(autoreset=True)

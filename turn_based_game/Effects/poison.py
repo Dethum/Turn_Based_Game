@@ -42,6 +42,7 @@ class PoisonEffect(StatusEffect):
         # Check expiration
         if self.is_expired():
             self.on_expire(target)
+        target.hp = max(target.hp, 0)  # prevent negative HP
 
     def on_expire(self, target):
         """
